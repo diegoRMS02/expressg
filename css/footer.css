@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  max-width: 100%;
+  padding: 50px;
+  background-color: black;
+  text-align: center;
+}
+
+.footer-links,
+.footer-logo,
+.footer-redes {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-logo img {
+  max-width: 60%;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer-links a {
+  display: flex;
+}
+
+.footer-links a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.footer-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes {
+  width: 100%;
+  justify-content: center;
+}
+
+.footer-redes a {
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ffa700;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: white;
+  /* Color de los enlaces no visitados */
+}
+
+a:visited {
+  color: white;
+  /* Color de los enlaces visitados */
+}
+
+a:active {
+  color: red;
+  /* Color de los enlaces activos (al hacer clic) */
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-logo img {
+    max-width: 80%;
+  }
+
+  .footer-logo,
+  .footer-links {
+    align-items: center;
+  }
+
+  .footer-redes {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+}

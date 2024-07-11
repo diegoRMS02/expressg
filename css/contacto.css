@@ -1,0 +1,251 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #dbdbdb;
+  margin: 0;
+  padding: 0;
+  background: url("") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #111;
+}
+
+section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+} */
+
+/* header nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+} */
+
+.header-nav {
+  display: flex;
+}
+
+/* 
+header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #f4f6f6;
+}
+
+header .search input {
+  padding: 5px;
+} */
+
+.hero-section {
+  text-align: center;
+  padding: 50px 0;
+  background-image: url("path/to/hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-section h2 {
+  margin: 0 0 10px;
+}
+
+.hero-section p {
+  margin: 0 0 20px;
+}
+
+
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.contact-section .contact-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-section .contact-image img {
+  width: 100%;
+  height: auto;
+}
+
+.contact-section .contact-form {
+  flex: 2;
+  padding: 0 20px;
+}
+
+.contact-form h3 {
+  margin-top: 0;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #222;
+  border: 1px solid #333;
+  color: #fff;
+}
+
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info h4 {
+  margin: 10px 0 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 700px) {
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .contact-section .contact-form {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* header nav {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  header nav a {
+    margin: 10px 0;
+  } */
+
+  .hero-section button {
+    display: block;
+    margin: 10px auto;
+  }
+
+  footer .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .footer-content>div {
+    margin-bottom: 20px;
+  }
+}
+
+.social-media a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-media img {
+  width: 30px;
+  margin: 0 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* .header-nav {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  } */
+
+  /* .header-logo img {
+    width: 150px;
+  } */
+
+  .hero-section h2 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hero-section h2 {
+    font-size: 20px;
+  }
+}
+
+button {
+  --glow-color: rgb(176 255 227 / 85%);
+  --glow-spread-color: rgba(149 255 123 / 78%);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: rgb(100, 61, 136);
+  border: .25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: #333;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em .25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 .75em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+}
+
+button::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: .7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+button:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em .25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 .75em .25em var(--glow-color);
+}
+
+button:active {
+  box-shadow: 0 0 0.6em .25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 .5em .25em var(--glow-color);
+}

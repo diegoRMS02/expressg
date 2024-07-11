@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar sesión - Express Game</title>
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+  </head>
+
+  <body>
+    <video autoplay muted loop id="video-background">
+      <source src="../fondo.mp4" />
+      Tu navegador no admite video HTML5.
+    </video>
+    <div class="login-container">
+      <div class="login-box">
+        <img src="../img/logo.jpg" alt="Express Game" class="logo" />
+        <h1 class="neon">Iniciar Sesión <br /></h1>
+        <form id="login-form">
+          <div class="input-group">
+            <label for="username">Usuario</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="input-group">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button>
+            <a href="http://localhost/CLUBGAMERS1/index.html"
+              >Iniciar Sesión
+            </a>
+          </button>
+        </form>
+        <div class="options">
+          <a href="#">¿Perdiste tu contraseña?</a>
+          <a href="http://localhost/CLUBGAMERS1/views/registro.html"
+            >¿No tienes una cuenta?</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="../js/login.js"></script>
+  </body>
+</html>
